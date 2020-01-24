@@ -1,4 +1,5 @@
 # Italy-Trigger-Word-Detection
+Is inspired to this work: https://www.dlology.com/blog/how-to-do-real-time-trigger-word-detection-with-keras/
 
 In this work we will see how to use works a triggerword detection with Keras implementation. Our input will be the word "Italy".
 
