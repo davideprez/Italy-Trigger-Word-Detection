@@ -4,6 +4,13 @@ In this work we will see how to use works a triggerword detection with Keras imp
 
 How to Run Require Python 3.5+ and Colab/Jupiter Notebook
 
+Other requirements:
+ - !pip3 install pydub
+ - !pip3 install h5py
+ - !pip3 install scipy
+ - !pip3 install matplotlib
+ - td_utils.py
+
 Data Synthesis
 
 1)The first step is to create a dataset for our triggerword detection algorithm, so we will record a mix of positive words ("italy") and negative words (other words than italy) under different backgrounds. The people who recorded the words are of different nationalities in different environments.
@@ -21,3 +28,11 @@ Model
 1)Our Hotword detected model will use 1-D convolutional layers, GRU layers, and dense layers.
 
 2)Fit the model
+
+3)Test the model
+
+Prediction
+
+1) Test on dev set
+
+Create Examples
