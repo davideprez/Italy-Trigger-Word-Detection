@@ -19,9 +19,9 @@ Data Synthesis
 
 3) Generate a training example using the positive, negative and background clips.
 
-4) Generate a full training set using the code for the training example.
+4) Generate a full training set (synthetized audio)
 
-5) Generate a development set of 25-10 seconds clips with positive and negative words.
+5) Generate a development set (real condition)
 
 Model
 
