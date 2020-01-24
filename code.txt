@@ -1,0 +1,14 @@
+n_train_per_bg = 2000
+n_train = len(backgrounds)*n_train_per_bg
+orig_X_train = np.empty((n_train, Tx, n_freq))
+orig_Y_train = np.empty((n_train, Ty , 1))
+
+for bg in range(len(backgrounds)):
+    for n in range(n_train_per_bg):
+        print("bg: {}, n: {}".format(bg, n))
+        x, y = create_training_example(backgrounds[bg], activates, negatives)
+        orig_X_train[bg*n_train_per_bg + n, :, :] = x.T
+        orig_Y_train[bg*n_train_per_bg + n, :, :] = y.T
+
+np.save('./XY_train/orig_X_train.npy', orig_X_train)
+np.save('./XY_train/orig_Y_train.npy', orig_Y_train)
